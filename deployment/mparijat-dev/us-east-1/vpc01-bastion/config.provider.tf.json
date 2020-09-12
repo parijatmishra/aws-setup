@@ -1,0 +1,8 @@
+{
+    "provider": {
+        "aws": {
+            "version": "~\u003e 3.0",
+            "region": "us-east-1"
+        }
+    }
+}

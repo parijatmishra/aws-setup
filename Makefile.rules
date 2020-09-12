@@ -1,0 +1,17 @@
+.PHONY: gen clean gen-base clean-base
+
+# Override these if needed in plan Makefiles
+
+gen: gen-base
+
+clean: clean-base
+
+gen-base:
+		cue eval -e terraform.vars --out json > config.auto.tfvars.json
+		cue eval -e terraform.provider --out json > config.provider.tf.json
+		cue eval -e terraform.backend --out json > config.backend.tf.json
+
+clean-base:
+		-rm -f config.auto.tfvars.json
+		-rm -f config.provider.tf.json
+		-rm -f config.backend.tf.json

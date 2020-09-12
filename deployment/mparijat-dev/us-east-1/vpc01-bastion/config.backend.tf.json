@@ -1,0 +1,9 @@
+{
+    "terraform": {
+        "backend": {
+            "local": {
+                "path": "../../../state/mparijat-dev.us-east-1.vpc01-bastion.tfstate"
+            }
+        }
+    }
+}
