@@ -18,7 +18,8 @@ _outputs: {
                 ]
             }
             "vpc01-bastion": {
-                bastion_iam_role: "vpc01-bastion"                bastion_instance_id: "i-0f2eba056543e9035"
+                bastion_iam_role: "vpc01-bastion"
+                bastion_instance_id: "i-0f2eba056543e9035"
                 bastion_public_ip: "3.238.8.155"
                 bastion_security_group_id: "sg-05a67a574dd791eb6"
             }
